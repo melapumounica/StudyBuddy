@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    background-color: #A8DDA8 ;
+    display: flex;
+    flex-flow: row wrap;
+    height: 70px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav>div{
+    color: white;
+    width: 120px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#logo{
+    color: #125C13 ;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+    font-size:xx-large;
+    flex: 0 0 700px;
+}
+.classroom{
+    background-image: url('images/study-buddy.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 100%;*/
+    height: 600px; 
+    opacity: 1;
+    z-index: 20;
+    overflow:hidden;
+    
+}
+.classroom-text{
+    color: #335D2D;
+    padding: 10% 34% ;
+    font-size:50px;
+    font-weight: bolder;
+}
+.classroom:hover{
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+#about{
+    background-color:#D9F8C4 ;
+    background-size: cover;
+}
+.about-us-head,.course-head,.contact-head{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    color: #556E53;
+}
+.about-us-text{
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #1E5128;
+    font-weight: bolder;
+}
+.about-us{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: #1E5128;
+    font-weight:bold;
+}
+
+#courses{
+    background-color: #C6EBC5;
+}
+.course-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.course-item{
+    background-color:#224B0C ;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: #D9F8C4;
+    cursor: pointer;
+}
+.course-img{
+    width: 98%;
+}
+@media  only screen and (max-width:992px) {
+    .about-us{
+        grid-template-columns: auto ;
+    }
+    .course-list{
+        grid-template-columns: auto auto;
+    }
+}
+@media  only screen and (max-width:768px) {
+    .course-list{
+        grid-template-columns: auto;
+    }
+}
+#contact{
+    background-color: #D4F6CC;
+    background-size: cover;
+
+}
+.contact-details{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.form-input,.form-input-text-area{
+    display: block;
+    border: 2px solid #224B0C;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 5px;
+}
+.form-input-text-area{
+    height: 150px;
+}
+.submit-button{
+    border: 2px solid #224B0C ;
+    background-color:  #224B0C;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+#footer{
+    background-color: #125C13 ;
+    width: 100%;
+    height:80px ;
+}
+.social-platforms{
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+.icon{
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5%;
+    margin: 20px;
+    cursor: pointer;
+}
+.icon>img{
+    width: 30px;
+}
+.number{
+    padding: 2%;
+    color: white;
+    font-weight: bold;
+}
+
+
